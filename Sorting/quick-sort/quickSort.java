@@ -13,23 +13,21 @@ public class Quick_Sort {
       System.out.print(arr[i] + " ");
   }
 
-  public static int[] takeinput()
-	{
-		Scanner scn=new Scanner(System.in);
-		
-		// input array length
-		int n=scn.nextInt();
-		
-		int[] arr = new int[n];
-		
-		for(int i=0;i<arr.length;i++)
-		{
-			// input array elements
-			arr[i]=scn.nextInt();
-		}
-		
-		return arr;
-	}
+  public static int[] takeinput() {
+    Scanner scn = new Scanner(System.in);
+
+    // input array length
+    int n = scn.nextInt();
+
+    int[] arr = new int[n];
+
+    for (int i = 0; i < arr.length; i++) {
+      // input array elements
+      arr[i] = scn.nextInt();
+    }
+
+    return arr;
+  }
 
   public static void Quick_Sort(int[] arr, int lo, int hi) {
     // if low index is higher than high index, simply return
